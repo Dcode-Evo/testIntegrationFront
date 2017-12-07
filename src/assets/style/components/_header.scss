@@ -1,0 +1,25 @@
+.header-wrapper {
+   overflow: hidden;
+   max-width: 100%;
+   border-bottom: 3px double black;
+}
+
+.header {
+   margin-bottom: 1px;
+   padding-top: $padding-xl-vertical;
+   padding-bottom: $padding-large-vertical - 2;
+   border-bottom: 1px solid black;
+}
+
+.header__headline {
+   margin:0;
+
+   color: green;
+   font-size: 2em;
+   line-height: 1.5em;
+   text-decoration: none;
+
+   &:hover {
+      text-decoration: underline;
+   }
+}

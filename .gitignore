@@ -178,3 +178,4 @@ typings/
 
 
 ### Project specific ignore ###
+src/assets/**/*.css

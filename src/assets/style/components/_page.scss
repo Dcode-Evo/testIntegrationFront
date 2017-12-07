@@ -1,0 +1,44 @@
+.page-title {
+   color: black;
+
+   @media (min-width: 60em) {
+      margin-right: 8rem;
+      font-size: 4em;
+   }
+}
+
+.page-caption {
+   font-size: 1.2em;
+   @media (min-width: 60em) {
+      margin-right: 8rem;
+      font-size: 1.3em;
+      line-height: 1.2em;
+   }
+}
+
+.page-content {
+   margin-bottom: $padding-base-vertical;
+   line-height: 1.4em;
+   @media (min-width: 60em) {
+      margin-right: 8rem;
+   }
+}
+
+.page-content__picture {
+   display: block;
+   width: 35em;
+   max-width: 100%;
+   margin: $padding-xl-vertical 0;
+
+   @media (min-width: 60em) {
+      float: right;
+      max-width: 35em;
+      margin: 0 0 1em 1em;
+   }
+}
+
+.page-separator {
+   border-width: 4px;
+   border-color: black;
+   margin: $padding-xl-vertical 0;
+}

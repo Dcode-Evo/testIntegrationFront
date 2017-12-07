@@ -1,0 +1,29 @@
+.article {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+
+.article__title {
+   margin-top: 0;
+   font-family: $font-family-highlight;
+   font-size: 2em;
+   line-height: 1.1em;
+}
+
+.article__content {
+   font-size: $font-size-small;
+   line-height: 1.4em;
+}
+
+.article__link {
+   color: $text-color-highlight;
+   font-family: $font-family-highlight;
+   margin-top: auto;
+   margin-bottom: $padding-base-vertical;
+
+   &:link,
+   &:visited, {
+      color: green;
+   }
+}

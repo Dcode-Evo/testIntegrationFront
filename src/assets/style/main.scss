@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'vendor/normalize';
+@import 'components/grid';
+@import 'components/header';
+@import 'components/article';
+@import 'components/article-list';
+@import 'components/page';
+
+body {
+   font-family: $font-family-base;
+   color: $text-color;
+}
+

@@ -1,0 +1,84 @@
+// Spacings
+//
+// Define common padding
+$padding-base-vertical: 8px !default;
+$padding-base-horizontal: 14px !default;
+
+$padding-large-vertical: 12px !default;
+$padding-large-horizontal: 20px !default;
+
+$padding-xl-vertical: 22px !default;
+$padding-xl-horizontal: 40px !default;
+
+$padding-small-vertical: 4px !default;
+$padding-small-horizontal: 6px !default;
+
+$padding-xs-vertical: 2px !default;
+$padding-xs-horizontal: 4px !default;
+
+// Global adaptive breakpoints
+//
+$bp-lg: 60em;
+
+// Color scheme
+//
+// Set of variable to define the color scheme of software
+$color-brand-primary: green;
+$color-success: #1679B0;
+$color-error: #FF3737;
+
+$color-neutral-darker: #252C32;
+$color-neutral-dark: #5A6167;
+$color-neutral: #E5E9EE;
+$color-neutral-light: #F0F3F6;
+$color-neutral-lightest: #FFFFFF;
+
+// Fonts
+//
+// Set of Font-family to use in software
+$font-family-highlight: 'Roboto Slab', serif;
+$font-family-base: Georgia, 'Times New Roman', Times, serif;
+
+// Type colors
+//
+// Set of predefined rules for types color
+//
+$text-color: $color-neutral-dark;
+$text-color-darken: $color-neutral-darker;
+$text-color-invert: $color-neutral-lightest;
+$text-color-highlight: $color-brand-primary;
+$text-color-info: #1679B0;
+
+// Text size
+//
+// Default font-size
+$font-size: 16px;
+$line-height: 1.4em;
+
+// Small font-size
+$font-size-small: 14px;
+$line-height: 1.3em;
+
+// Smaller font-size
+$font-size-smaller: 12px;
+$line-height-smaller: 15px;
+
+// Headings size
+//
+$font-size-h1: 28px;
+$line-height-h1: 1.2em;
+
+$font-size-h2: 24px;
+$line-height-h2: 1.3em;
+
+$font-size-h3: 20px;
+$line-height-h3: 1.1em;
+
+$font-size-h4: 18px;
+$line-height-h4: 1.3em;
+
+$font-size-h5: 16px;
+$line-height-h5: 1.2em;
+
+$font-size-h6: $font-size;
+$line-height-h6: $line-height;
