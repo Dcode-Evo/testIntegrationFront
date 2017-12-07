@@ -1,0 +1,17 @@
+{
+   "env": {
+      "browser": true
+   },
+   "extends": "airbnb-base/legacy",
+   "globals": {},
+   "rules": {
+      "indent": [
+         "error",
+         3
+      ],
+      "comma-dangle": [
+         "error",
+         "always"
+      ]
+   }
+}

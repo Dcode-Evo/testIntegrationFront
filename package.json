@@ -5,5 +5,18 @@
   "main": " ",
   "author": "sire-sam <sire-sam@users.noreply.github.com>",
   "license": "UNLICENSED",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2"
+  },
+  "scripts": {
+    "dev": "run-p dev:* ",
+    "dev:css": "node-sass ./src/assets/style --output ./src/assets/style && node-sass ./src/assets/style --output ./src/assets/style --watch",
+    "dev:server": "browser-sync start -s ./src --files ./src/"
+  }
 }
