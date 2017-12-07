@@ -1,0 +1,9 @@
+{
+  "name": "frontEndTest",
+  "version": "1.0.0",
+  "description": "Environement for front-end test",
+  "main": " ",
+  "author": "sire-sam <sire-sam@users.noreply.github.com>",
+  "license": "UNLICENSED",
+  "private": true
+}
