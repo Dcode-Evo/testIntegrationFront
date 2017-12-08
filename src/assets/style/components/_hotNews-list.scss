@@ -5,26 +5,15 @@
   padding: 0;
   margin: 0;
   list-style: none;
-
-  @media screen and (min-width: 480px) {
-    justify-content: space-around;
-  }
-
-  @media screen and (min-width: $bp-lg) {
-    justify-content: flex-start;
-  }
 }
 
 .hotNews-list__items {
-  width: 100%;
+  // margin-bottom: 10px;
+  margin-right: 12px;
   margin-bottom: 10px;
   text-align: center;
   border: 1px solid $color-brand-primary;
   border-radius: 4px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 
   a {
     display: block;
@@ -39,15 +28,8 @@
       background: $color-brand-primary;
     }
   }
-
-  @media screen and (min-width: 480px) {
-    width: 45%;
-    margin-bottom: 10px;
-  }
   
-  @media screen and (min-width: $bp-lg) {
-    width: auto;
+  @media screen and (min-width: 780px) {
     margin-bottom: 0;
-    margin-right: 12px;
   }
 }
