@@ -6,6 +6,10 @@
 @import 'components/article-list';
 @import 'components/page';
 
+// HOT NEWS
+@import 'components/hotNews';
+@import 'components/hotNews-list';
+
 body {
    font-family: $font-family-base;
    color: $text-color;
