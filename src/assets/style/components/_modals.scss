@@ -1,0 +1,88 @@
+.modal {
+   width: 100vw;
+   height: 100vh;
+
+   position: absolute;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   z-index: 999;
+
+   background: rgba(0, 0, 0, .4);
+
+   iframe {
+      width: 85%;
+      height: 85%;
+      margin: auto;
+      background: #fafafa;
+      display: block;
+   }
+
+   .animate {
+      &.opening {
+         animation: modal-opening 1s;
+         -webkit-animation: modal-opening 1s;
+         -moz-animation: modal-opening 1s;
+         -o-animation: modal-opening 1s;
+      }
+
+      &.closing {
+         animation: modal-closing 1s;
+         -webkit-animation: modal-closing 1s;
+         -moz-animation: modal-closing 1s;
+         -o-animation: modal-closing 1s;
+      }
+
+      &.closed {
+         opacity: 0;
+         display: none;
+      }
+   }
+}
+
+@mixin modal-opening {
+   from {
+      opacity: 0;
+      display: none;
+   }
+   to {
+      display: block;
+      opacity: 1;
+   }
+}
+
+@mixin modal-closing {
+   from {
+      opacity: 1;
+      display: block;
+   }
+   to {
+      opacity: 0;
+      display: none;
+   }
+}
+
+@-webkit-keyframes modal-opening {
+   @include modal-opening;
+}
+
+@-moz-keyframes modal-opening {
+   @include modal-opening;
+}
+
+@keyframes modal-opening {
+   @include modal-opening;
+}
+
+@-webkit-keyframes modal-closing {
+   @include modal-closing;
+}
+
+@-moz-keyframes modal-closing {
+   @include modal-closing;
+}
+
+@keyframes modal-closing {
+   @include modal-closing;
+}

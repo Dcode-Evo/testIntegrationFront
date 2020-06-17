@@ -51,6 +51,10 @@ $tag-border-color: green !default;
                color: $tag-text-color;
                font-size: $tag-font-size;
 
+               &:hover {
+                  cursor: pointer;
+               }
+
                @media screen and (max-width: 768px) {
                   margin-bottom: 5px;
                }
@@ -59,3 +63,5 @@ $tag-border-color: green !default;
       }
    }
 }
+
+
