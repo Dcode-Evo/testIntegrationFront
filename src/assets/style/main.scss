@@ -11,3 +11,51 @@ body {
    color: $text-color;
 }
 
+.newsList {
+   padding-top: 18px;
+   padding-bottom: 15px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 700px;
+
+   .newsList__news {
+      padding-right: 10px;
+      font-family: $font-family-highlight;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 21px;
+      color: $color-neutral-darker;
+   }
+
+   a {
+      padding: 5px 10px;
+      text-decoration: none;
+      color: $color-brand-primary;
+      font-family: $font-family-highlight;
+      font-size: 14px;
+      border: 1px solid $color-brand-primary;
+      border-radius: 5px;
+
+      &:hover {
+         background-color: $color-brand-primary;
+         color: white;
+      }
+   }
+
+}
+
+@media screen and (max-width: 801px) {
+   .newsList {
+      flex-direction: column;
+      padding-top: 0;
+
+      div {
+         margin: 10px;
+      }
+
+   }
+}
+
+
+
