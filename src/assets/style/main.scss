@@ -58,9 +58,10 @@ body {
    left: 0;
    top: 0;
    width: 100%;
-   height: 100%;
+   height: 100vh;
    background-color: rgba(0, 0, 0, 0.6);
    display: none;
+   animation: opacityModalOut 1s;
 
    &.is-black {
       display: block;
@@ -75,18 +76,27 @@ body {
    to {
       background-color: rgba(0, 0, 0, 0.6);
    }
+}
 
+@keyframes opacityModalOut {
+   from {
+      background-color: rgba(0, 0, 0, 0.6);
+   }
+   to {
+      background-color: rga(0, 0, 0, 0);
+   }
 }
 
 .modal {
    display: none;
    z-index: 1000;
    width: 80%;
-   height: 60%;
+   height: 60vh;
    position: absolute;
-   top: 10%;
+   top: 10vh;
    left: 10%;
    background-color: white;
+   animation: modalOut 2s;
 
 
    .close-cross {
@@ -104,10 +114,19 @@ body {
 
 @keyframes modalIn {
    from {
-      top: 100%;
+      top: 100vh;
    }
    to {
-      top: 10%;
+      top: 10vh;
+   }
+}
+
+@keyframes modalOut {
+   from {
+      top: 10vh;
+   }
+   to {
+      top: 100vh;
    }
 }
 
@@ -122,6 +141,14 @@ body {
          margin: 10px;
       }
 
+   }
+}
+
+@media screen and (max-width: 801px) {
+   .modal {
+      height: 80vh;
+      width: 90%;
+      left: 5%;
    }
 }
 

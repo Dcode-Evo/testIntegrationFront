@@ -1,15 +1,13 @@
 console.log('It works');
 
 const popUp = document.querySelectorAll(".modal--trigger");
-console.log(popUp);
 
 const modalOne = document.querySelector('.modal-one');
 const modalTwo = document.querySelector('.modal-two');
 const modalThree = document.querySelector('.modal-three');
 const modalFour = document.querySelector('.modal-four')
 
-const closeCross = document.querySelector('.close-cross');
-
+const closeCross = document.querySelectorAll('.close-cross');
 
 const bodyBlackout = document.querySelector('.body-blackout');
 
@@ -23,7 +21,10 @@ function addBlackOut() {
 }
 
 bodyBlackout.addEventListener('click', isNotBlack);
-closeCross.addEventListener('click', isNotBlack)
+closeCross[0].addEventListener('click', isNotBlack);
+closeCross[1].addEventListener('click', isNotBlack);
+closeCross[2].addEventListener('click', isNotBlack);
+closeCross[3].addEventListener('click', isNotBlack);
 
 function isNotBlack() {
    document.querySelector('.is-black').classList.remove('is-black');
