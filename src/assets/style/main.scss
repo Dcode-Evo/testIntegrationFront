@@ -9,5 +9,148 @@
 body {
    font-family: $font-family-base;
    color: $text-color;
+   position: relative;
 }
+
+
+
+.newsList {
+   padding-top: 18px;
+   padding-bottom: 15px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 700px;
+
+   .newsList__news {
+      padding-right: 10px;
+      font-family: $font-family-highlight;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 21px;
+      color: $color-neutral-darker;
+   }
+
+   button {
+      padding: 5px 10px;
+      text-decoration: none;
+      color: $color-brand-primary;
+      font-family: $font-family-highlight;
+      font-size: 14px;
+      border: 1px solid $color-brand-primary;
+      border-radius: 5px;
+      background-color: white;
+      cursor: pointer;
+
+      &:hover {
+         background-color: $color-brand-primary;
+         color: white;
+      }
+   }
+
+}
+
+/* Modal */
+
+.body-blackout {
+   position: absolute;
+   z-index: 2;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, 0.6);
+   display: none;
+   animation: opacityModalOut 1s;
+
+   &.is-black {
+      display: block;
+      animation: opacityModal 1s;
+   }
+}
+
+@keyframes opacityModal {
+   from {
+      background-color: rgba(0, 0, 0, 0);
+   }
+   to {
+      background-color: rgba(0, 0, 0, 0.6);
+   }
+}
+
+@keyframes opacityModalOut {
+   from {
+      background-color: rgba(0, 0, 0, 0.6);
+   }
+   to {
+      background-color: rga(0, 0, 0, 0);
+   }
+}
+
+.modal {
+   display: none;
+   z-index: 1000;
+   width: 80%;
+   height: 60vh;
+   position: absolute;
+   top: 10vh;
+   left: 10%;
+   background-color: white;
+   animation: modalOut 2s;
+
+
+   .close-cross {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+   }
+
+   &.modal-is-open {
+      display: block;
+      animation: modalIn 2s;
+   }
+
+}
+
+@keyframes modalIn {
+   from {
+      top: 100vh;
+   }
+   to {
+      top: 10vh;
+   }
+}
+
+@keyframes modalOut {
+   from {
+      top: 10vh;
+   }
+   to {
+      top: 100vh;
+   }
+}
+
+/* Media query */
+
+@media screen and (max-width: 801px) {
+   .newsList {
+      flex-direction: column;
+      padding-top: 0;
+
+      div {
+         margin: 10px;
+      }
+
+   }
+}
+
+@media screen and (max-width: 801px) {
+   .modal {
+      height: 80vh;
+      width: 90%;
+      left: 5%;
+   }
+}
+
+
 

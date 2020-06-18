@@ -1,5 +1,5 @@
 {
-  "name": "frontEndTest",
+  "name": "Simon-18-06",
   "version": "1.0.0",
   "description": "Environement for front-end test",
   "main": " ",
@@ -18,5 +18,9 @@
     "dev": "run-p dev:* ",
     "dev:css": "node-sass ./src/assets/style --output ./src/assets/style && node-sass ./src/assets/style --output ./src/assets/style --watch",
     "dev:server": "browser-sync start -s ./src --files ./src/"
+  },
+  "repository": "https://github.com/Dcode-Evo/testIntegrationFront.git",
+  "dependencies": {
+    "sass": "^1.26.8"
   }
 }
