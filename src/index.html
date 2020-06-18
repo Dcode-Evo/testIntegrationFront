@@ -11,9 +11,13 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <link rel="stylesheet" href="assets/style/main.css">
+   <link rel="import" href="./articles/article-1.html">
+   <link rel="import" href="./articles/article-2.html">
+   <link rel="import" href="./articles/article-3.html">
 </head>
 
 <body>
+<div class="body-blackout"></div>
    <!--[if lte IE 10]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -28,21 +32,52 @@
 <div class="container">
    <div class="newsList">
       <div class="newsList__news">Hot News:</div>
-      <div class="newList__lorem">
-         <a href="/" alt="">Lorem Ipsum</a>
+      <div class="newList__lorem ">
+         <button class="modal--trigger" type="button" data-popup-trigger="one">
+            Lorem Ipsum
+         </button>
+         <div class="modal modal-one">
+
+            <a class="close-cross">
+               <img class="is-black" src="https://img.icons8.com/fluent/48/000000/close-window.png"/>
+            </a>
+
+         </div>
       </div>
 
       <div class="newList__dolor">
-         <a href="/" alt="">dolor sit amet</a>
+         <button class="modal--trigger" type="button" data-popup-trigger="two">
+            dolor sit amet
+         </button>
+         <div class="modal modal-two">
+            <a class="close-cross">
+               <img class="is-black" src="https://img.icons8.com/fluent/48/000000/close-window.png"/>
+            </a>
+         </div>
       </div>
 
       <div class="newList__consectetur">
-         <a href="/" alt="">consectetur adipiscing elit</a>
+         <button class="modal--trigger" type="button" data-popup-trigger="three">
+            consectetur adipiscing elit
+         </button>
+         <div class="modal modal-three">
+            <a class="close-cross">
+               <img class="is-black" src="https://img.icons8.com/fluent/48/000000/close-window.png"/>
+            </a>
+         </div>
       </div>
 
-      <div class="newsList__excepteur">
-         <a href="/" alt="">Excepteur sint</a>
+      <div class="newsList__excepteur ">
+         <button class="modal--trigger" type="button" data-popup-trigger="one">
+            Excepteur sint
+         </button>
+         <div class="modal modal-four">
+            <a class="close-cross">
+               <img class="is-black" src="https://img.icons8.com/fluent/48/000000/close-window.png"/>
+            </a>
+         </div>
       </div>
+
    </div>
 </div>
 
